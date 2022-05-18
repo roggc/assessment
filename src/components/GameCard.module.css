@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom:52px;
+    padding-bottom:52px;
+    box-sizing: border-box;
 }
 
 .img{

@@ -1,5 +1,5 @@
 :root{
-    --header-height:10vh;
+    --header-height:10%;
 }
 
 .header{
@@ -24,7 +24,7 @@
 .content{
     position: fixed;
     top:var(--header-height);
-    height:calc(100vh - var(--header-height)*2);
+    height:calc(100% - var(--header-height)*2);
     overflow: auto;
     width:100%;
 }
