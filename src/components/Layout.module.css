@@ -1,0 +1,28 @@
+.header{
+    position:fixed;
+    height:8vh;
+    background-color: rgb(50, 46, 42);
+    top: 0;
+    width: 100%;
+}
+
+.footer{
+    position:fixed;
+    height:8vh;
+    background-color: rgb(254 254 254);
+    bottom:0;
+    width:100%;
+    box-shadow: 0 0 11px -6px;
+}
+
+.layout{
+    height:100vh;
+}
+
+.content{
+    position: fixed;
+    top:8vh;
+    height:84vh;
+    overflow: auto;
+    width:100%;
+}

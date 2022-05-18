@@ -1,8 +1,13 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen,prettyDOM } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+it('renders a header',()=>{
+  const {container}=render(<App />)
+  console.log(prettyDOM(container))
+  expect(screen.getByTestId('header')).toBeInTheDocument()
+})
+
+it('renders a footer',()=>{
+  render(<App />)
+  expect(screen.getByTestId('footer')).toBeInTheDocument()
+})
