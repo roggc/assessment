@@ -4,13 +4,19 @@ import classes from "./App.module.css";
 import GameCard from "./components/GameCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useEffect } from "react";
 
-const url = "https://gist.githubusercontent.com/vbence86/83da491ff9830ad19ac6fa0a10162fc1/raw/d543204847b3d9896f0ce15d244bb89160fe0f86/games.json";
+const url_ =
+  "https://gist.githubusercontent.com/vbence86/83da491ff9830ad19ac6fa0a10162fc1/raw/d543204847b3d9896f0ce15d244bb89160fe0f86/games.json";
 
 const imgBaseUrl = "https://ambui.betonline.ag/amber";
 
 const App = () => {
-  const { data, isLoading, isError } = useFetch(url);
+  const { data, isError, isLoading, setUrl } = useFetch();
+
+  useEffect(() => {
+    setUrl(url_);
+  }, [setUrl]);
 
   const getChildren = () => {
     if (isLoading)
