@@ -1,30 +1,30 @@
-:root{
-    --header-height:10%;
+:root {
+  --header-height: 10%;
 }
 
-.header{
-    position:fixed;
-    height:var(--header-height);
-    background-color: rgb(50, 46, 42);
-    top: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
+.header {
+  position: fixed;
+  height: var(--header-height);
+  background-color: rgb(50, 46, 42);
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.footer{
-    position:fixed;
-    height:var(--header-height);
-    background-color: rgb(254 254 254);
-    bottom:0;
-    width:100%;
-    box-shadow: 0 0 11px -6px;
+.footer {
+  position: fixed;
+  height: var(--header-height);
+  background-color: rgb(254 254 254);
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 0 11px -6px;
 }
 
-.content{
-    position: fixed;
-    top:var(--header-height);
-    height:calc(100% - var(--header-height)*2);
-    overflow: auto;
-    width:100%;
+.content {
+  position: fixed;
+  top: var(--header-height);
+  height: calc(100% - var(--header-height) * 2);
+  overflow: auto;
+  width: 100%;
 }

@@ -1,22 +1,22 @@
-.card{
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom:52px;
-    box-sizing: border-box;
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 52px;
+  box-sizing: border-box;
 }
 
-.img{
-    width:32vw;
-    border-radius:10px;
-    box-shadow: 0 0 10px -3px;
+.img {
+  width: 32vw;
+  border-radius: 10px;
+  box-shadow: 0 0 10px -3px;
 }
 
-.name{
-    font-weight:700;
-    margin-top:12px;
-    font-size: 1.1rem;
-    color:rgb(66, 68, 68);
-    white-space: nowrap;
+.name {
+  font-weight: 700;
+  margin-top: 12px;
+  font-size: 1.1rem;
+  color: rgb(66, 68, 68);
+  white-space: nowrap;
 }
