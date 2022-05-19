@@ -1,9 +1,8 @@
-import { render, screen,prettyDOM } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import App from './App';
 
 it('renders a header',()=>{
-  const {container}=render(<App />)
-  console.log(prettyDOM(container))
+  render(<App />)
   expect(screen.getByTestId('header')).toBeInTheDocument()
 })
 

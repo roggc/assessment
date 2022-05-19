@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# React Developer Assessment
+
+The main work in this project was to deal with styles and that they rendered ok in mobile. The *eject* script from *create-react-app* was executed in an attempt to change configuration of *jest*, but at the end it was not necessary (but once you do it there is no reverse way). A custom hook was created to fetch data (and unit tested).
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
